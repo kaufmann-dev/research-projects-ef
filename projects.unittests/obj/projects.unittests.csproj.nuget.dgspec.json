@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Downloads\\projects\\projects.unittests\\projects.unittests.csproj": {}
+    "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects.unittests\\projects.unittests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Downloads\\projects\\projects.unittests\\projects.unittests.csproj": {
+    "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects.unittests\\projects.unittests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Downloads\\projects\\projects.unittests\\projects.unittests.csproj",
+        "projectUniqueName": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects.unittests\\projects.unittests.csproj",
         "projectName": "projects.unittests",
-        "projectPath": "C:\\Users\\David\\Downloads\\projects\\projects.unittests\\projects.unittests.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Downloads\\projects\\projects.unittests\\obj\\",
+        "projectPath": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects.unittests\\projects.unittests.csproj",
+        "packagesPath": "C:\\Users\\serbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects.unittests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet"
-        ],
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\serbi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\David\\Downloads\\projects\\projects\\projects.csproj": {
-                "projectPath": "C:\\Users\\David\\Downloads\\projects\\projects\\projects.csproj"
+              "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\projects.csproj": {
+                "projectPath": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\projects.csproj"
               }
             }
           }
@@ -90,32 +84,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\David\\Downloads\\projects\\projects\\projects.csproj": {
+    "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\projects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Downloads\\projects\\projects\\projects.csproj",
+        "projectUniqueName": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\projects.csproj",
         "projectName": "projects",
-        "projectPath": "C:\\Users\\David\\Downloads\\projects\\projects\\projects.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Downloads\\projects\\projects\\obj\\",
+        "projectPath": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\projects.csproj",
+        "packagesPath": "C:\\Users\\serbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\serbi\\Documents\\School projects\\4BHITM_INSY_consoles\\projects\\projects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet"
-        ],
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\serbi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -167,12 +155,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

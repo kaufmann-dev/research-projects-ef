@@ -10,12 +10,12 @@ namespace projects {
             Console.WriteLine("Project Domain Data Hallo!");
             var factory = new ProjectDbContextFactoryMySql();
 
-            /*using (var context = factory.CreateDbContext(args)) {
+            using (var context = factory.CreateDbContext(args)) {
                 context.Database.ExecuteSqlRaw("DELETE FROM SUBPROJECTS WHERE 1 = 1");
-                context.Database.ExecuteSqlRaw("DELETE FROM PROJECTS WHERE 1 = 1");
-                context.Database.ExecuteSqlRaw("DELETE FROM DEBITORS WHERE 1 = 1");
-                context.Database.ExecuteSqlRaw("DELETE FROM FACILITIES WHERE 1 = 1");
                 context.Database.ExecuteSqlRaw("DELETE FROM FUNDING WHERE 1 = 1");
+                context.Database.ExecuteSqlRaw("DELETE FROM PROJECTS WHERE 1 = 1");
+                context.Database.ExecuteSqlRaw("DELETE FROM FACILITIES WHERE 1 = 1");
+                context.Database.ExecuteSqlRaw("DELETE FROM DEBITORS WHERE 1 = 1");
             }
 
             var projects = new AProject[] {
@@ -96,11 +96,34 @@ namespace projects {
                 
                 context.Fundings.AddRange(fundings);
                 context.SaveChanges();
-            }*/
+            }
 
+            // LINQ
             using (var context = factory.CreateDbContext(args)) {
+                var projectList =
+                    from p in context.Projects
+                    where p.Title.Contains("Element")
+                    select p;
+                foreach (var VARIABLE in projectList)
+                {
+                    Console.WriteLine(VARIABLE);
+                }
+
+                var subprojectList =
+                    from p in context.Projects
+                    group p by p.LegalFoundation into projectGroup
+                    select new
+                    {
+                        LegalFoundation = projectGroup.Key,
+                        projectCount = projectGroup.Count()
+                    };
+                foreach (var VARIABLE in subprojectList)
+                {
+                    Console.WriteLine(VARIABLE);
+                }
+                
                 // Finden Sie alle Projekte mit einer LegalFoundation P_27
-                var projectList = from p in context.Projects
+                var _projectList = from p in context.Projects
                     where p.LegalFoundation == ELegalFoundation.P_27
                     select p;
 
